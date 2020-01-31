@@ -13,7 +13,7 @@ server.use(cors());
 server.use('/api', apiRouter);
 
 server.get('/', (req, res) => {
-  res.send("Watch your local storage tokens for exciting updates!");
+  res.status(200).json({ status: "Running." });
 });
 
 module.exports = server;
